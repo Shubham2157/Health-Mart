@@ -2,10 +2,11 @@ package com.shubham.healthmart;
 
 public class ScreenItem {
 
-    String Title,Description;
+    String Title;
+    int Description;
     int ScreenImg;
 
-    public ScreenItem(String title, String description, int screenImg) {
+    public ScreenItem(String title, int description, int screenImg) {
         Title = title;
         Description = description;
         ScreenImg = screenImg;
@@ -15,7 +16,7 @@ public class ScreenItem {
         Title = title;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(int description) {
         Description = description;
     }
 
@@ -27,7 +28,7 @@ public class ScreenItem {
         return Title;
     }
 
-    public String getDescription() {
+    public int getDescription() {
         return Description;
     }
 
