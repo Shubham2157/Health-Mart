@@ -1,4 +1,4 @@
-package com.shubham.healthmart;
+package com.shubham.healthmart.Models;
 
 public class ScreenItem {
 

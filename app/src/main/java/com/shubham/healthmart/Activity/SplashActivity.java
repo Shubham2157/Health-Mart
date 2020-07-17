@@ -1,4 +1,4 @@
-package com.shubham.healthmart;
+package com.shubham.healthmart.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.shubham.healthmart.R;
 
 public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_SCREEN = 5000;
@@ -37,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this,OnBoardingActivity.class);
+                Intent intent = new Intent(SplashActivity.this, OnBoardingActivity.class);
                 startActivity(intent);
                 finish();
             }
